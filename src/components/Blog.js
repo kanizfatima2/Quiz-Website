@@ -1,6 +1,6 @@
 import React from 'react'
 
-const About = () => {
+const Blog = () => {
   return (
     <>
 
@@ -39,4 +39,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Blog
