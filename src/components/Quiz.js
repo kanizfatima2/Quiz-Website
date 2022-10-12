@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 const Quiz = ({ quiz }) => {
-    const { name, logo, total } = quiz
+    const { name, logo, total, id } = quiz
     // console.log(name);
     return (
         <div>
@@ -13,7 +14,7 @@ const Quiz = ({ quiz }) => {
                         <h2 className="text-3xl font-semibold tracking-wide">{name}</h2>
                         <p className="text-gray-100">{total} Question</p>
                     </div>
-                    <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900">Start Practice</button>
+                    <Link to={`/quiz/${id}`}>  <button type="button" className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md bg-violet-400 text-gray-900">Start Practice</button> </Link>
                 </div>
             </div>
         </div>
